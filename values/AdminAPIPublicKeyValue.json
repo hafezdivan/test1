@@ -1,0 +1,5 @@
+{
+    "name": "AdminAPIPublicKeyValue",
+    "value": "AdminAPIPublicKey",
+    "from_secret": true
+}

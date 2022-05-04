@@ -1,0 +1,19 @@
+{
+    "id": "62393b1338ca4566ddf9819d",
+    "name": "onNewUser",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "CREATE",
+        "providers": [
+            "local-userpass"
+        ]
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "createNewUserDocument"
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "id": "624558d0a0d0c7f08d774d79",
+    "name": "EnableRealmSync",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 */1 * * *",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "Realm_EnableSync"
+            }
+        }
+    }
+}
