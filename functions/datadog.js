@@ -28,7 +28,7 @@ exports = async function(logs) {
     headers: {
      "Content-Type": "application/json",
      "DD-API-KEY": "8667200b4f38f9743602bf5fcb1dd4f9",
-     "DD-APPLICATION-KEY": "8667200b4f38f9743602bf5fcb1dd4f9"
+     "DD-APPLICATION-KEY": "02851e3272241ec73669de957974d2f8fc9f6d8d"
     },
     encodeBodyAsJSON: true
   });
