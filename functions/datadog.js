@@ -23,12 +23,11 @@ exports = async function(logs) {
   // `logs` is an array of 1-100 log objects
   // Use an API or library to send the logs to another service.
   await context.http.post({
-    url: "https://api.datadoghq.com/api/v2/logs/events/search",
+    url: "https://http-intake.logs.datadoghq.com/api/v2/logs",
     body: logs,
     headers: {
-     "Content-Type": "application/json",
-     "DD-API-KEY": "8667200b4f38f9743602bf5fcb1dd4f9",
-     "DD-APPLICATION-KEY": "02851e3272241ec73669de957974d2f8fc9f6d8d"
+     "Content-Type": ["application/json"],
+     "DD-API-KEY": ["8667200b4f38f9743602bf5fcb1dd4f9"],
     },
     encodeBodyAsJSON: true
   });
