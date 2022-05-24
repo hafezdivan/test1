@@ -1,5 +1,5 @@
 {
-    "name": "test",
+    "name": "datadog",
     "log_types": [
         "auth",
         "endpoint",
@@ -19,10 +19,8 @@
         "type": "batch"
     },
     "action": {
-        "type": "collection",
-        "data_source": "mongodb-atlas",
-        "database": "test",
-        "collection": "metrics"
+        "type": "function",
+        "name": "datadog"
     },
     "disabled": false
 }
