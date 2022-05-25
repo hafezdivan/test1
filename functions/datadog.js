@@ -28,6 +28,7 @@ exports = async function(logs) {
     headers: {
      "Content-Type": ["application/json"],
      "DD-API-KEY": ["8667200b4f38f9743602bf5fcb1dd4f9"],
+     "DD_SITE": ["datadoghq.com"],
     },
     encodeBodyAsJSON: true
   });
