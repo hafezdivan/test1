@@ -1,9 +1,8 @@
 [
     {
-        "name": "datadog",
+        "name": "getMyTeamMembers",
         "private": false,
-        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};",
-        "disable_arg_logs": true
+        "run_as_system": true
     },
     {
         "name": "addTeamMember",
@@ -11,13 +10,42 @@
         "run_as_system": true
     },
     {
+        "name": "resetFunc",
+        "private": false,
+        "can_evaluate": {}
+    },
+    {
+        "name": "testRealmEnable",
+        "private": false
+    },
+    {
+        "name": "datadog",
+        "private": false,
+        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};",
+        "disable_arg_logs": true
+    },
+    {
+        "name": "Realm_EnableSync",
+        "private": false
+    },
+    {
+        "name": "lastEnableSync",
+        "private": false,
+        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};"
+    },
+    {
         "name": "RealmGetConfig",
         "private": false
     },
     {
-        "name": "resetFunc",
-        "private": false,
+        "name": "createNewUserDocument",
+        "private": true,
         "can_evaluate": {}
+    },
+    {
+        "name": "removeTeamMember",
+        "private": false,
+        "run_as_system": true
     },
     {
         "name": "Authenticate",
@@ -29,40 +57,12 @@
         "run_as_system": true
     },
     {
-        "name": "removeTeamMember",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "Realm_EnableSync",
-        "private": false
-    },
-    {
-        "name": "getMyTeamMembers",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "testRealmEnable",
-        "private": false
-    },
-    {
-        "name": "createNewUserDocument",
-        "private": true,
-        "can_evaluate": {}
-    },
-    {
-        "name": "test",
-        "private": false
-    },
-    {
         "name": "canWritePartition",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "lastEnableSync",
-        "private": false,
-        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};"
+        "name": "test",
+        "private": false
     }
 ]
