@@ -1,6 +1,25 @@
 [
     {
-        "name": "RealmGetConfig",
+        "name": "Realm_EnableSync",
+        "private": false
+    },
+    {
+        "name": "canReadPartition",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "canWritePartition",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "createNewUserDocument",
+        "private": true,
+        "can_evaluate": {}
+    },
+    {
+        "name": "Authenticate",
         "private": false
     },
     {
@@ -9,12 +28,13 @@
         "run_as_system": true
     },
     {
-        "name": "Realm_EnableSync",
+        "name": "RealmGetConfig",
         "private": false
     },
     {
-        "name": "test",
-        "private": false
+        "name": "addTeamMember",
+        "private": false,
+        "run_as_system": true
     },
     {
         "name": "resetFunc",
@@ -26,23 +46,15 @@
         "private": false
     },
     {
-        "name": "addTeamMember",
+        "name": "datadog",
         "private": false,
-        "run_as_system": true
+        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};",
+        "disable_arg_logs": true
     },
     {
-        "name": "canReadPartition",
+        "name": "lastEnableSync",
         "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "Authenticate",
-        "private": false
-    },
-    {
-        "name": "createNewUserDocument",
-        "private": true,
-        "can_evaluate": {}
+        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};"
     },
     {
         "name": "removeTeamMember",
@@ -50,19 +62,7 @@
         "run_as_system": true
     },
     {
-        "name": "datadog",
-        "private": false,
-        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};",
-        "disable_arg_logs": true
-    },
-    {
-        "name": "canWritePartition",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "lastEnableSync",
-        "private": false,
-        "run_as_user_id_script_source": "exports = function(payload) {\n  /*\n    This function should return the id of a user to run the webhook as. For example:\n    if (payload.condition) {\n     return \"5a3db0b88b1f2cabd68ed4d9\";\n    }\n    return \"5908ffd3d383ad67b0fff290\";\n  */\n};"
+        "name": "test",
+        "private": false
     }
 ]
