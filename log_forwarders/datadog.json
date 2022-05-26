@@ -16,7 +16,7 @@
         "success"
     ],
     "policy": {
-        "type": "batch"
+        "type": "single"
     },
     "action": {
         "type": "function",
