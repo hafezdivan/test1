@@ -31,7 +31,7 @@ exports = async function(logs) {
       "ddtags": "sxo_realm_log_forwarder",  
       "hostname": "SXO-PROD-NA", 
       "service": "Realm",
-      "logs": logs,
+      "Content": logs,
     }],
     encodeBodyAsJSON: true
   });
